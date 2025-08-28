@@ -1,0 +1,47 @@
+alecsearle@Alecs-MacBook-Pro testing-units-f25-alecsearle % pytest -v  
+=============================================== test session starts ================================================
+platform darwin -- Python 3.12.0, pytest-8.3.3, pluggy-1.5.0 -- /Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12
+cachedir: .pytest_cache
+rootdir: /Users/alecsearle/2025_fall_semester/se3150_software_quality/testing-units-f25-alecsearle
+plugins: describe-2.2.0, anyio-4.9.0, spec-4.0.0
+collected 37 items                                                                                                 
+
+test_suite_1/test_circle.py::testCircle::test_all_functions PASSED                                           [  2%]
+test_suite_1/test_circle.py::testCircle::test_get_area PASSED                                                [  5%]
+test_suite_1/test_circle.py::testCircle::test_get_area_2 PASSED                                              [  8%]
+test_suite_1/test_circle.py::testCircle::test_get_circumference PASSED                                       [ 10%]
+test_suite_1/test_circle.py::testCircle::test_get_radius PASSED                                              [ 13%]
+test_suite_1/test_circle.py::testCircle::test_set_bad_radius PASSED                                          [ 16%]
+test_suite_1/test_circle.py::testCircle::test_set_radius PASSED                                              [ 18%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_account_owner_name PASSED                           [ 21%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_account_str_format PASSED                           [ 24%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_balance_after_mixed_transactions PASSED             [ 27%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_deposit_and_withdraw_sequence PASSED                [ 29%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_deposit_float PASSED                                [ 32%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_deposit_large_amount PASSED                         [ 35%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_deposit_multiple_times PASSED                       [ 37%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_deposit_negative PASSED                             [ 40%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_deposit_valid PASSED                                [ 43%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_deposit_zero PASSED                                 [ 45%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_init_zero_balance PASSED                            [ 48%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_large_transfer_amount PASSED                        [ 51%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_large_withdraw_sequence PASSED                      [ 54%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_transfer_entire_balance PASSED                      [ 56%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_transfer_insufficient PASSED                        [ 59%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_transfer_multiple_times PASSED                      [ 62%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_transfer_negative_amount PASSED                     [ 64%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_transfer_to_empty_account PASSED                    [ 67%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_transfer_to_self PASSED                             [ 70%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_transfer_valid PASSED                               [ 72%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_transfer_zero_amount PASSED                         [ 75%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_transfers_between_three_accounts PASSED             [ 78%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_withdraw_exact_balance PASSED                       [ 81%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_withdraw_float PASSED                               [ 83%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_withdraw_insufficient PASSED                        [ 86%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_withdraw_multiple_time PASSED                       [ 89%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_withdraw_negative PASSED                            [ 91%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_withdraw_until_empty PASSED                         [ 94%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_withdraw_valid PASSED                               [ 97%]
+test_suite_2/test_bank_account.py::TestBankAccount::test_withdraw_zero PASSED                                [100%]
+
+================================================ 37 passed in 0.02s ================================================
