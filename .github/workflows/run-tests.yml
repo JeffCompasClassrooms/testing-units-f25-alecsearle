@@ -5,7 +5,7 @@ on:
     branches: [main, master]
   pull_request:
     branches: [main, master]
-  workflow_dispatch: # Allows manual triggering
+  workflow_dispatch:
 
 jobs:
   test:
@@ -18,7 +18,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.12" # Match your local version
+          python-version: "3.12"
 
       - name: Install dependencies
         run: |
@@ -28,17 +28,3 @@ jobs:
       - name: Run all unit tests
         run: |
           pytest -v
-
-      - name: Run tests with coverage (optional)
-        run: |
-          pip install coverage
-          coverage run -m pytest
-          coverage report
-          coverage html
-
-      - name: Upload coverage report (optional)
-        uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: coverage-report
-          path: htmlcov/
